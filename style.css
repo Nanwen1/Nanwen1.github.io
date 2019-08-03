@@ -52,6 +52,10 @@ html{
     text-decoration: none;
 }
 
+a:hover{
+    color:darkgrey;
+}
+
 #menu-container {
     margin-right: 130px;
     max-width: 700px;
@@ -77,28 +81,38 @@ html{
 
 /* These are my form styles */
 
-#row-message{
-    height:800px;
-
-}
-
-#my-form-group{
-    width:500px;
+#message{
+    height:100px;
 }
 
 #my-form-container{
-    font-family: monospace; 
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    font-family: monospace;
+    max-width: 700px;
 }
 
-
-#my-form{
-    width: 700px;
-    margin: auto;
+#my-button{
+    color: black;
+    background-color:  white;
+    border-color: grey;
 }
 
+#my-button:focus{
+    box-shadow: 0 0 0 0.1rem darkslategray;
+}
 
+.form-control{
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0%;
+}
 
+.form-control:focus{
+    border-color: black;
+    box-shadow: 0 0 0 0.1rem white;
+    border: none;
+    border-bottom: 1px solid darkslategray;
+}
+
+input{
+    display: inline-block;
+}

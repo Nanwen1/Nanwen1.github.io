@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <title>Nanwen Sounness Contact</title>
-        <link rel="stylesheet" href="./style.css"/>
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>
         <script src="./bootstrap/js/bootstrap.bundle.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css"/>
     </head>
     <body>
         <h1 class="information">Contact</h1>
@@ -27,55 +27,36 @@
                                 <a class="mylink" href="./pagecontactform.html">Contact</a>
                         </div>
                     </div>
-                </div>
+            </div>
             </br>
-            <form action="https://formspree.io/nanwens@gmail.com" id="my-form">
-            <div class="container" id="my-form-container">  
-                <div class="row">
-                    <div class= "form-group" id="my-form-group">
-                        <div class="col-3">
-                                <label for="name">First Name </label>
+        <div id="my-form-container">
+            <form action="https://formspree.io/nanwens@gmail.com" id="my-form" autocomplete="off">
+                    <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label for="firstname">Firstname</label>
+                                <input type="text" name="lastname" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="lastname">Lastname</label>
+                                    <input type="text" name="lastname" class="form-control">
+                                </div>  
+                            </div>
                         </div>
-                        <div class="col-3">
-                                <input type="text" name="name" class="form control">
-                        </div>
-                        <div class="col-3">
-                                <label for="name">Last Name </label>
-                        </div>
-                        <div class="col-3">
-                                <input type="text" name="name" class="form control">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class= "form-group">
-                        <div class="col">
+                        <div class="form-group">
                             <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control">
                         </div>
-                        <div class="col">
-                            <input type="email" name="email" class="form control">  
+                        <div class="form-group">
+                            <label for="text">Message</label>
+                            <textarea type="text" name="text" class="form-control" id="message"></textarea>
                         </div>
-                    </div>
-                </div>
-                <div class="row align-items-stretch" id="row-message">
-                    <div class= "form-group">
-                        <div class="col">
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="col">
-                            <input type="text" name="message" class="form control">    
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <button type="submit">Send</button> 
-                </div>
-            </div> 
+                        <small class="form-text text-muted">
+                                I'll be in touch.
+                        </small>
+                        <br/>
+                        <button type="submit" class="btn btn-primary" id="my-button">Submit</button>
             </form>
-<!-- 
-            <form action="https://www.google.com/">
-                <input type="text" name="q"/> 
-                <input type="submit">
-            </form>  -->
+        </div>
     </body>
 </html>
