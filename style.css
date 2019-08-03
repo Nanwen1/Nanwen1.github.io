@@ -72,6 +72,24 @@ a:hover{
     width:100%; 
 }
 
+.poppybutton:hover{
+    font-family: monospace; 
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    position: relative;
+    z-index: 2;
+}
+
+#myprojectbutton1{
+    color: black;
+    background-color:  white;
+    border-color: grey;
+}
+
+.mycard{
+    font-family: monospace; 
+}
+
 .my-col{
     margin-right: 0px !important;
     margin-left: 0px !important;
